@@ -15,13 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ソース.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="ソース1.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="no1.cpp">
+    <ClCompile Include="AtcoderBeginnersSelection\ABC086A.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
