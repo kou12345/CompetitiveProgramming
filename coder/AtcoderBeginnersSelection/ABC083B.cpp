@@ -2,32 +2,28 @@
 
 using namespace std;
 
+// 各桁の和を計算する
+int findSumOfDigits(int n) {
+    int sum = 0;
+    while (n > 0) {
+        sum += n % 10;
+        n /= 10;
+    }
+    return sum;
+}
+
 int main()
 {
-   int N, A, B;
-   int ans = 0;
-//    cin >> N >> A >> B;
-
-    cout << 1 % 10 << endl;
-    cout << 10 % 10 << endl;
-    cout << 123 % 10 << endl;
-    cout << 123 % 100 << endl;
-
-//    for (int i = 0; i < N; i++)
-//    {
-//        if(i <= A && i >= B)
-//        {
-//            ans += i;
-//        }
-//    }
-
-//    cout << ans << endl;
-
-    // 桁数を取得
-    // 桁数の数だけループ
-    // N % 10
-    // A % 10
-    
+    int N, A, B;
+    cin >> N >> A >> B;
+    int total = 0;
+    for (int i = 1; i <= N; ++i) {
+        int sum = findSumOfDigits(i);
+        if (sum >= A && sum <= B) {
+            total += i;
+        }
+    }   
+    cout << total << endl;
 
     return 0;
 }

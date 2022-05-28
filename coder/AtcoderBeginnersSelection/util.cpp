@@ -13,6 +13,16 @@ size_t countDigits(T n)
     return tmp.size();
 }
 
+// 各桁の和を計算する
+int findSumOfDigits(int n) {
+    int sum = 0;
+    while (n > 0) {
+        sum += n % 10;
+        n /= 10;
+    }
+    return sum;
+}
+
 int main() {
     int num = 1234567;
 
