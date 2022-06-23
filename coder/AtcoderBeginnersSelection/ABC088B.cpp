@@ -21,8 +21,8 @@ int main() {
 
     for (int i = 0; i < N; i++) {
         auto maxNum = max_element(A.begin(), A.end());
-
     }
+
 
     return 0;
 }
