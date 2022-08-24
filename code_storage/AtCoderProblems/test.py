@@ -1,7 +1,19 @@
-for di in [-1, 0, 1]:
-    for dj in [-1, 0, 1]:
-        print(f"di:{di} dj:{dj}")
-        if (di == 0 and dj == 0):
-            print("continueした")
-            continue
+a, b = input().split()
 
+
+for _ in range(3):
+    list a = input().split() # もじ
+
+b = [0]*3
+for i in range(3):
+    a[i] = int(a[i])
+
+
+print(a)
+
+
+"""
+1
+[1, 2, 3]
+,
+"""
